@@ -1,25 +1,101 @@
-# Get Started in raylib in 20 minutes - C++
-Welcome to the easiest introduction to game development with raylib in C++. If you're new to raylib, you're in the right place to start your journey. In this video, I will guide you through the installation process of raylib on your Windows computer and we are going to build a simple raylib project from scratch. We'll be using C++ with Visual Studio Code to develop a basic raylib program featuring a keyboard-controlled ball. The entire procedure is very easy and should take no more than 20 minutes.
+# 🐍 Snake Game – C++ / Raylib
 
-# How to use this project
-1. Double click on the main.code-workspace file. This will open the project in VS Code.
-2. From the Explorer Window of VS Code navigate to the src folder and double click on the main.cpp file.
-3. Press F5 on the keyboard to compile and run the program.
-4. Watch the video which explains every line of the code.
+A simple **2D Snake Game** developed from scratch using **C++** and the **Raylib graphics library**.
 
-# Video Tutorial
+The goal of the game is to **eat as many apples as possible** while avoiding collisions with:
+- the walls of the square game area
+- the snake's own body
 
-<p align="center">
-  <img src="preview.jpg" alt="" width="800">
-</p>
+Each apple eaten increases the snake's length and the player's score. The game ends when a collision occurs.
 
-<p align="center">
-🎥 <a href = "https://youtu.be/RGzj-PF7D74">Video Tutorial on YouTube</a>
-</p>
+---
 
-<br>
-<br>
-<p align="center">
-| 📺 <a href="https://www.youtube.com/channel/UC3ivOTE5EgpmF2DHLBmWIWg">My YouTube Channel</a>
-| 🌍 <a href="http://www.educ8s.tv">My Website</a> | <br>
-</p>
+## 🎮 Features
+
+- Classic Snake gameplay
+- Real-time keyboard input
+- Score tracking
+- Simple and clean 2D graphics
+- Smooth game loop using Raylib
+
+---
+
+## 🛠️ Technologies Used
+
+- **C++**
+- **Raylib** (graphics, window, input and audio handling)
+- **Makefile** for compilation
+- **Git / GitHub** for version control
+
+---
+
+## ⚙️ Technical Details
+
+The game was built with a modular structure using C++ and Raylib.
+
+Key concepts implemented:
+
+- **Game Loop**  
+  Continuous update and rendering cycle using Raylib functions.
+
+- **Input Handling**  
+  Keyboard inputs are used to control the snake's direction.
+
+- **Collision Detection**
+  - Snake with walls
+  - Snake with its own body
+  - Snake with apples
+
+- **Data Structures**
+  The snake body is dynamically updated as the snake grows.
+
+- **Rendering**
+  Raylib is used to draw the game grid, snake segments, apples, and UI elements.
+
+- **Audio**
+  Sound effects are played when:
+  - the snake eats an apple
+  - the game ends
+
+---
+
+## 📂 Project Structure
+
+```
+snake-game/
+│
+├── .vscode/            # VS Code configuration
+├── lib/                # External libraries
+├── src/                # Source code files
+│
+├── main.cpp            # Main program entry point
+├── Makefile            # Compilation instructions
+│
+├── apple.png           # Apple sprite
+├── apple1.png          # Alternate apple sprite
+├── preview.jpg         # Game preview image
+│
+├── .gitignore
+├── .gitattributes
+└── README.md
+```
+
+---
+
+## 🚀 Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/snake-game.git
+```
+---
+## Learning Objectives
+
+-This project helped strengthen my understanding of:
+-C++ programming
+-Game development fundamentals
+-Real-time rendering
+-Input handling
+-Basic collision detection
+-Using Raylib for graphical applications
