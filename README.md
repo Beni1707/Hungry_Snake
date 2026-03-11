@@ -82,20 +82,24 @@ snake-game/
 
 ---
 
-## 🚀 Installation
+## 🚀 How to Run the Game
 
-Clone the repository:
+Make sure Raylib is installed, then compile and run the program:
 
 ```bash
-git clone https://github.com/yourusername/snake-game.git
+g++ main.cpp -o main -lraylib -lGL -lm -lpthread -ldl -lrt -lX11
+./main
 ```
----
-## Learning Objectives
 
--This project helped strengthen my understanding of:
--C++ programming
--Game development fundamentals
--Real-time rendering
--Input handling
--Basic collision detection
--Using Raylib for graphical applications
+If you are using **VS Code**, you can also run the project directly by pressing **F5**.
+---
+
+## 📌 Learning Objectives
+This project helped strengthen my understanding of:
+
+- C++ programming
+- Game development fundamentals
+- Real-time rendering
+- Input handling
+- Basic collision detection
+- Using Raylib for graphical applications
